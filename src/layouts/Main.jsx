@@ -1,5 +1,6 @@
 import PostCard from "../components/PostCard/PostCard"
 import posts from "../data/posts.js"
+import Tags from "../components/Tags/Tags.jsx"
 
 function Main() {
     return (
@@ -17,6 +18,9 @@ function Main() {
                             </div>
                         ))}
                     </div>
+                </div>
+                <div className="container">
+                    <Tags />
                 </div>
             </main>
         </>

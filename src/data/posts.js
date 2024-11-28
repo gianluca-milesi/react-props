@@ -1,13 +1,12 @@
-/**
- * Alcuni post dovranno rimanere senza immagine, quindi avere la proprietà image = undefined
- */
-import imageSrc from "../assets/ghepardo.jpg"
+import imageGhepardo from "../assets/ghepardo.jpg"
+import imageProcione from "../assets/procione.jpeg"
+import imageLeone from "../assets/leone.jpg"
 
 export const posts = [
 	{
 		id: 1,
 		title: 'Titolo del Post',
-		image: '' /* compila questo campo */,
+		image: imageGhepardo,
 		content:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.',
 		tags: ['html', 'css'],
@@ -16,7 +15,7 @@ export const posts = [
 	{
 		id: 2,
 		title: 'Titolo del Post',
-		image: '' /* compila questo campo */,
+		image: imageProcione,
 		content:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.',
 		tags: ['js', 'css'],
@@ -25,7 +24,7 @@ export const posts = [
 	{
 		id: 3,
 		title: 'Titolo del Post',
-		image: '' /* compila questo campo */,
+		image: undefined,
 		content:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.',
 		tags: ['js', 'php'],
@@ -34,7 +33,7 @@ export const posts = [
 	{
 		id: 4,
 		title: 'Titolo del Post',
-		image: '' /* compila questo campo */,
+		image: imageLeone,
 		content:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.',
 		tags: ['html'],

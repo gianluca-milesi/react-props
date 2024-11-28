@@ -11,7 +11,7 @@ function Main() {
                             <div key={post.id} className="col-6">
                                 {
                                     post.published === true ?
-                                        <PostCard title={post.title} content={post.content} tags={post.tags} />
+                                        <PostCard title={post.title} image={post.image} content={post.content} tags={post.tags} />
                                         : null
                                 }
                             </div>

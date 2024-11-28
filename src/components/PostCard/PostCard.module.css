@@ -4,12 +4,19 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
+/* .card_not_published {
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    opacity: 0.5;
+} */
+
 .thumbnail {
     width: 100%;
     border-radius: 14px 14px 0 0;
 }
 
-.card_body{
+.card_body {
     padding: 10px;
     display: flex;
     flex-direction: column;

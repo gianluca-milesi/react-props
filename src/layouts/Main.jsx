@@ -9,7 +9,11 @@ function Main() {
                     <div className="row">
                         {posts.map((post) => (
                             <div key={post.id} className="col-6">
-                                <PostCard title={post.title} content={post.content} />
+                                {
+                                    post.published === true ?
+                                        <PostCard title={post.title} content={post.content} tags={post.tags} />
+                                        : null
+                                }
                             </div>
                         ))}
                     </div>

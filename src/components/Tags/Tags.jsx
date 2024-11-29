@@ -1,29 +1,14 @@
 import style from "./Tags.module.css"
-import posts from "../../data/posts.js"
 
-function Tags({ tags }) {
-
-    let allTags = [];
-    let uniqueTags = [];
-
-    posts.forEach(post => {
-        allTags = allTags.concat(post.tags);
-    });
-
-    for (let i = 0; i < allTags.length; i++) {
-        if (!uniqueTags.includes(allTags[i])) {
-            uniqueTags.push(allTags[i]);
-        }
-    }
-
-    const tagsToString = uniqueTags.join(", ");
+function Tags({ className, tags = [] }) {
 
     return (
-        <div className={style.all_tags}>
-            <h3>TAGS</h3>
-            <p>{tagsToString}</p>
-        </div>
-    );
+        <ul className={`${style.tags} ${className}`}>
+            {tags.map((tag) => (
+                // <li style={{ backgroundColor: tagColors[tag] }} className={`${style.tag_item}`} key={tag}>{tag}</li>
+                <li className={`${style.tag_item} ${style[tag]}`} key={tag}>{tag}</li>
+            ))}
+        </ul>
+    )
 }
-
 export default Tags
